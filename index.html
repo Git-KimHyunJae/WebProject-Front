@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project-for-study</title>
+  </head>
+  <body>
+    <div>그저 아무거나 다 해보는 프로젝트</div>
+    <div id="app">{{message}}</div>
+    <button id="app2">{{text}}</button>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          message: "이것은 메세지.",
+        },
+      });
+      new Vue({
+        el: "#app2",
+        data: {
+          text: "이것은 텍스트",
+        },
+      });
+    </script>
+  </body>
+</html>
